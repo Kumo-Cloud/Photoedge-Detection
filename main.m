@@ -14,4 +14,4 @@ IC = mat2cell(I(1:fLn*BKSize(1),1:fLs*BKSize(2)),hLn,hLs);
 
 % block_x, block_y are actual loction of one point in I
 
-type = Math(IC{Block(1), Block(2)});
+type = Math(IC{Block(1), Block(2)},BKSize(1)*BKSize(2));
